@@ -230,8 +230,10 @@ document.getElementById("salir").addEventListener("click", signOut);
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     console.log(`Está en el sistema:${user.email} ${user.uid}`);
+    document.getElementById("message").innerText = `Está en el sistema: ${user.uid}`;
   } else {
     console.log("no hay usuarios en el sistema");
+    document.getElementById("message").innerText = `No hay usuarios en el sistema`;
   }
 });
 
