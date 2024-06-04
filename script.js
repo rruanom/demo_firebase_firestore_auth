@@ -1,4 +1,11 @@
-let firebaseConfig = { //objeto de configuración de Firebase
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDzVjPLA1L_GCVDAU-othyqt6LJ7nTwvNI",
+  authDomain: "demofirebase-c5452.firebaseapp.com",
+  projectId: "demofirebase-c5452",
+  storageBucket: "demofirebase-c5452.appspot.com",
+  messagingSenderId: "283197146254",
+  appId: "1:283197146254:web:336dc7045f5678dc00f5df"
 };
 
 firebase.initializeApp(firebaseConfig);// Inicializaar app Firebase
